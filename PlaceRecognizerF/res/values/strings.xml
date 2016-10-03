@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StoreRecognizerF</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="light">Light</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="sensordata_folder">SensorData</string>
+    <string name="defaultinfo">Press the button to start Place Recognition!</string>
+    <string name="no_sensorWiFiGPS">No sensor/WiFi/GPS is installed/enabled in this phone!</string>
+    <string name="promptselect">Please make sure WiFi and GPS are enabled!</string>
+    <string name="wifi">WiFi</string>
+    <string name="gps">GPS</string>
+    <string name="placename">Place:</string>
+    <string name="useplace">Use</string>
+	<string name="PlaceRecognizerFolder">PlaceRecognizer</string>
+</resources>

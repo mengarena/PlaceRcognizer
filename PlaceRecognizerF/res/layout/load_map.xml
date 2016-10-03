@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black">"
+    
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TableRow
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >        
+		<TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="40dp"
+		    android:layout_gravity="center_vertical"
+		    android:gravity="center_vertical"
+		    android:textSize="24sp"     
+		    android:text=" GPS Coordinates:"
+		    />
+		</TableRow>
+</TableLayout>
+
+
+	
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView
+			android:layout_height="50dp"
+			android:layout_width="wrap_content"
+	    	android:layout_column="0"
+	    	android:layout_weight="1"
+	    	android:textSize="18sp" 
+	    	android:gravity="left"    
+			android:text=" Lat: ">
+		</TextView>
+	    <EditText
+	        android:id="@+id/GpsLat"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:textSize="18sp"
+	    	android:layout_column="1"
+	    	android:layout_weight="11"
+	    	android:gravity="left"
+	    	android:layout_gravity="center_vertical"/> 	    		
+		 
+	</TableRow>	  
+</TableLayout>	    
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TextView
+			android:layout_height="50dp"
+			android:layout_width="wrap_content"
+	    	android:layout_column="0"
+	    	android:layout_weight="1"
+	    	android:textSize="18sp"
+	    	android:gravity="left"     
+			android:text=" Long:">
+		</TextView>
+	    <EditText
+	        android:id="@+id/GpsLong"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:textSize="18sp"
+	    	android:layout_column="1"
+	    	android:layout_weight="11"
+	    	android:gravity="left"
+	    	android:layout_gravity="center_vertical"/>
+	</TableRow>	  
+</TableLayout>	    
+
+
+<View  
+    android:layout_width="fill_parent"  
+    android:layout_height="4px"  
+    android:background="?android:attr/listDivider"  
+/>
+<View  
+    android:layout_width="fill_parent"  
+    android:layout_height="4px"  
+    android:background="?android:attr/listDivider"/>
+
+<ProgressBar
+	android:id="@+id/MapDownloadProgress"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal"
+	android:layout_centerHorizontal="true"
+	android:indeterminate="true"
+	android:visibility="gone"/>
+
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >
+	
+    
+   	<TableRow
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+		<TextView  
+			android:id="@+id/ShowDownloadStatus"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp" 
+		    android:text=""/>	    
+    </TableRow>
+    
+    <TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:layout_height="80dp"
+			android:layout_width="0.0dip"
+			android:id="@+id/DownloadMap"
+			android:text="Download Map"
+			android:layout_weight="1"
+			android:textSize="24sp"/>			
+	</TableRow>
+
+    <TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<Button android:layout_height="80dp"
+			android:layout_width="0.0dip"
+			android:id="@+id/Back"
+			android:text="Back"
+			android:layout_weight="1"
+			android:textSize="24sp"/>			
+	</TableRow>
+    	
+</TableLayout>
+
+	    
+</LinearLayout>
+
